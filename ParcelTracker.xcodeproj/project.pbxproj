@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		575431CB21A7DAE200C557B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431CA21A7DAE200C557B7 /* AppDelegate.swift */; };
+		575431CD21A7DAE200C557B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431CC21A7DAE200C557B7 /* ViewController.swift */; };
+		575431CF21A7DAE600C557B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575431CE21A7DAE600C557B7 /* Assets.xcassets */; };
+		575431D221A7DAE600C557B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575431D021A7DAE600C557B7 /* Main.storyboard */; };
+		575431DE21A7DAE600C557B7 /* ParcelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431DD21A7DAE600C557B7 /* ParcelTrackerTests.swift */; };
+		575431E921A7DAE600C557B7 /* ParcelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431E821A7DAE600C557B7 /* ParcelTrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		575431DA21A7DAE600C557B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575431BF21A7DAE200C557B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575431C621A7DAE200C557B7;
+			remoteInfo = ParcelTracker;
+		};
+		575431E521A7DAE600C557B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575431BF21A7DAE200C557B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575431C621A7DAE200C557B7;
+			remoteInfo = ParcelTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		575431C721A7DAE200C557B7 /* ParcelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParcelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		575431CA21A7DAE200C557B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		575431CC21A7DAE200C557B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		575431CE21A7DAE600C557B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		575431D121A7DAE600C557B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		575431D321A7DAE600C557B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575431D421A7DAE600C557B7 /* ParcelTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParcelTracker.entitlements; sourceTree = "<group>"; };
+		575431D921A7DAE600C557B7 /* ParcelTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParcelTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575431DD21A7DAE600C557B7 /* ParcelTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTrackerTests.swift; sourceTree = "<group>"; };
+		575431DF21A7DAE600C557B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575431E421A7DAE600C557B7 /* ParcelTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParcelTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575431E821A7DAE600C557B7 /* ParcelTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTrackerUITests.swift; sourceTree = "<group>"; };
+		575431EA21A7DAE600C557B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		575431C421A7DAE200C557B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575431D621A7DAE600C557B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575431E121A7DAE600C557B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		575431BE21A7DAE200C557B7 = {
+			isa = PBXGroup;
+			children = (
+				575431C921A7DAE200C557B7 /* ParcelTracker */,
+				575431DC21A7DAE600C557B7 /* ParcelTrackerTests */,
+				575431E721A7DAE600C557B7 /* ParcelTrackerUITests */,
+				575431C821A7DAE200C557B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		575431C821A7DAE200C557B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				575431C721A7DAE200C557B7 /* ParcelTracker.app */,
+				575431D921A7DAE600C557B7 /* ParcelTrackerTests.xctest */,
+				575431E421A7DAE600C557B7 /* ParcelTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		575431C921A7DAE200C557B7 /* ParcelTracker */ = {
+			isa = PBXGroup;
+			children = (
+				575431CA21A7DAE200C557B7 /* AppDelegate.swift */,
+				575431CC21A7DAE200C557B7 /* ViewController.swift */,
+				575431CE21A7DAE600C557B7 /* Assets.xcassets */,
+				575431D021A7DAE600C557B7 /* Main.storyboard */,
+				575431D321A7DAE600C557B7 /* Info.plist */,
+				575431D421A7DAE600C557B7 /* ParcelTracker.entitlements */,
+			);
+			path = ParcelTracker;
+			sourceTree = "<group>";
+		};
+		575431DC21A7DAE600C557B7 /* ParcelTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				575431DD21A7DAE600C557B7 /* ParcelTrackerTests.swift */,
+				575431DF21A7DAE600C557B7 /* Info.plist */,
+			);
+			path = ParcelTrackerTests;
+			sourceTree = "<group>";
+		};
+		575431E721A7DAE600C557B7 /* ParcelTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				575431E821A7DAE600C557B7 /* ParcelTrackerUITests.swift */,
+				575431EA21A7DAE600C557B7 /* Info.plist */,
+			);
+			path = ParcelTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		575431C621A7DAE200C557B7 /* ParcelTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575431ED21A7DAE600C557B7 /* Build configuration list for PBXNativeTarget "ParcelTracker" */;
+			buildPhases = (
+				575431C321A7DAE200C557B7 /* Sources */,
+				575431C421A7DAE200C557B7 /* Frameworks */,
+				575431C521A7DAE200C557B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParcelTracker;
+			productName = ParcelTracker;
+			productReference = 575431C721A7DAE200C557B7 /* ParcelTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		575431D821A7DAE600C557B7 /* ParcelTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575431F021A7DAE600C557B7 /* Build configuration list for PBXNativeTarget "ParcelTrackerTests" */;
+			buildPhases = (
+				575431D521A7DAE600C557B7 /* Sources */,
+				575431D621A7DAE600C557B7 /* Frameworks */,
+				575431D721A7DAE600C557B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575431DB21A7DAE600C557B7 /* PBXTargetDependency */,
+			);
+			name = ParcelTrackerTests;
+			productName = ParcelTrackerTests;
+			productReference = 575431D921A7DAE600C557B7 /* ParcelTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		575431E321A7DAE600C557B7 /* ParcelTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575431F321A7DAE600C557B7 /* Build configuration list for PBXNativeTarget "ParcelTrackerUITests" */;
+			buildPhases = (
+				575431E021A7DAE600C557B7 /* Sources */,
+				575431E121A7DAE600C557B7 /* Frameworks */,
+				575431E221A7DAE600C557B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575431E621A7DAE600C557B7 /* PBXTargetDependency */,
+			);
+			name = ParcelTrackerUITests;
+			productName = ParcelTrackerUITests;
+			productReference = 575431E421A7DAE600C557B7 /* ParcelTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		575431BF21A7DAE200C557B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Maxim Danilov";
+				TargetAttributes = {
+					575431C621A7DAE200C557B7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					575431D821A7DAE600C557B7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 575431C621A7DAE200C557B7;
+					};
+					575431E321A7DAE600C557B7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 575431C621A7DAE200C557B7;
+					};
+				};
+			};
+			buildConfigurationList = 575431C221A7DAE200C557B7 /* Build configuration list for PBXProject "ParcelTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 575431BE21A7DAE200C557B7;
+			productRefGroup = 575431C821A7DAE200C557B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				575431C621A7DAE200C557B7 /* ParcelTracker */,
+				575431D821A7DAE600C557B7 /* ParcelTrackerTests */,
+				575431E321A7DAE600C557B7 /* ParcelTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		575431C521A7DAE200C557B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575431CF21A7DAE600C557B7 /* Assets.xcassets in Resources */,
+				575431D221A7DAE600C557B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575431D721A7DAE600C557B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575431E221A7DAE600C557B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		575431C321A7DAE200C557B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575431CD21A7DAE200C557B7 /* ViewController.swift in Sources */,
+				575431CB21A7DAE200C557B7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575431D521A7DAE600C557B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575431DE21A7DAE600C557B7 /* ParcelTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575431E021A7DAE600C557B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575431E921A7DAE600C557B7 /* ParcelTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		575431DB21A7DAE600C557B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575431C621A7DAE200C557B7 /* ParcelTracker */;
+			targetProxy = 575431DA21A7DAE600C557B7 /* PBXContainerItemProxy */;
+		};
+		575431E621A7DAE600C557B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575431C621A7DAE200C557B7 /* ParcelTracker */;
+			targetProxy = 575431E521A7DAE600C557B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		575431D021A7DAE600C557B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575431D121A7DAE600C557B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		575431EB21A7DAE600C557B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		575431EC21A7DAE600C557B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		575431EE21A7DAE600C557B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ParcelTracker/ParcelTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8LY9ZAPD65;
+				INFOPLIST_FILE = ParcelTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maxdan.ParcelTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		575431EF21A7DAE600C557B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ParcelTracker/ParcelTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8LY9ZAPD65;
+				INFOPLIST_FILE = ParcelTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maxdan.ParcelTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		575431F121A7DAE600C557B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8LY9ZAPD65;
+				INFOPLIST_FILE = ParcelTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maxdan.ParcelTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParcelTracker.app/Contents/MacOS/ParcelTracker";
+			};
+			name = Debug;
+		};
+		575431F221A7DAE600C557B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8LY9ZAPD65;
+				INFOPLIST_FILE = ParcelTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maxdan.ParcelTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParcelTracker.app/Contents/MacOS/ParcelTracker";
+			};
+			name = Release;
+		};
+		575431F421A7DAE600C557B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8LY9ZAPD65;
+				INFOPLIST_FILE = ParcelTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maxdan.ParcelTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = ParcelTracker;
+			};
+			name = Debug;
+		};
+		575431F521A7DAE600C557B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8LY9ZAPD65;
+				INFOPLIST_FILE = ParcelTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maxdan.ParcelTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = ParcelTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		575431C221A7DAE200C557B7 /* Build configuration list for PBXProject "ParcelTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575431EB21A7DAE600C557B7 /* Debug */,
+				575431EC21A7DAE600C557B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575431ED21A7DAE600C557B7 /* Build configuration list for PBXNativeTarget "ParcelTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575431EE21A7DAE600C557B7 /* Debug */,
+				575431EF21A7DAE600C557B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575431F021A7DAE600C557B7 /* Build configuration list for PBXNativeTarget "ParcelTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575431F121A7DAE600C557B7 /* Debug */,
+				575431F221A7DAE600C557B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575431F321A7DAE600C557B7 /* Build configuration list for PBXNativeTarget "ParcelTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575431F421A7DAE600C557B7 /* Debug */,
+				575431F521A7DAE600C557B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 575431BF21A7DAE200C557B7 /* Project object */;
+}
