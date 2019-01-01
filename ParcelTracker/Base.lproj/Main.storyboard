@@ -723,9 +723,9 @@ Gw
                                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                                     </textFieldCell>
                                                                                 </textField>
-                                                                                <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n5C-Pn-Gac">
+                                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="499" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5C-Pn-Gac">
                                                                                     <rect key="frame" x="50" y="33" width="252" height="18"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="left" title="Name" id="5oI-eu-qDV">
+                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="left" title="Name" usesSingleLineMode="YES" id="5oI-eu-qDV">
                                                                                         <font key="font" metaFont="systemBold" size="14"/>
                                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1061,7 +1061,7 @@ Gw
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="OX8-ha-Qbb"/>
                                 </constraints>
                                 <holdingPriorities>
-                                    <real value="251"/>
+                                    <real value="351"/>
                                     <real value="1"/>
                                 </holdingPriorities>
                             </splitView>
