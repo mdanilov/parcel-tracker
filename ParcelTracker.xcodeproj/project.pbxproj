@@ -13,6 +13,14 @@
 		575431D221A7DAE600C557B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575431D021A7DAE600C557B7 /* Main.storyboard */; };
 		575431DE21A7DAE600C557B7 /* ParcelTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431DD21A7DAE600C557B7 /* ParcelTrackerTests.swift */; };
 		575431E921A7DAE600C557B7 /* ParcelTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431E821A7DAE600C557B7 /* ParcelTrackerUITests.swift */; };
+		575431F721A870D600C557B7 /* AddParcelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431F621A870D600C557B7 /* AddParcelViewController.swift */; };
+		575431F921A891E700C557B7 /* Parcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431F821A891E600C557B7 /* Parcel.swift */; };
+		575431FB21A957A900C557B7 /* MoyaposylkaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431FA21A957A900C557B7 /* MoyaposylkaService.swift */; };
+		575431FF21AAAE5800C557B7 /* ParcelTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431FE21AAAE5800C557B7 /* ParcelTableCellView.swift */; };
+		575B3ECF21C56D2D006249E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 575B3ECD21C56D2D006249E3 /* Localizable.strings */; };
+		575B3ED421C670DD006249E3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B3ED321C670DD006249E3 /* WindowController.swift */; };
+		5775DAED21B271CE00F114FB /* ParcelStatusTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775DAEC21B271CE00F114FB /* ParcelStatusTableCellView.swift */; };
+		57C21AF821BD0F3700D5B780 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57C21AF621BD0F3700D5B780 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,17 @@
 		575431E421A7DAE600C557B7 /* ParcelTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParcelTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		575431E821A7DAE600C557B7 /* ParcelTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTrackerUITests.swift; sourceTree = "<group>"; };
 		575431EA21A7DAE600C557B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575431F621A870D600C557B7 /* AddParcelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParcelViewController.swift; sourceTree = "<group>"; };
+		575431F821A891E600C557B7 /* Parcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parcel.swift; sourceTree = "<group>"; };
+		575431FA21A957A900C557B7 /* MoyaposylkaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaposylkaService.swift; sourceTree = "<group>"; };
+		575431FE21AAAE5800C557B7 /* ParcelTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTableCellView.swift; sourceTree = "<group>"; };
+		575B3ECB21C569A4006249E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		575B3ECC21C56A94006249E3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		575B3ECE21C56D2D006249E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ParcelTracker/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		575B3ED021C56D85006249E3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ParcelTracker/ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		575B3ED321C670DD006249E3 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		5775DAEC21B271CE00F114FB /* ParcelStatusTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelStatusTableCellView.swift; sourceTree = "<group>"; };
+		57C21AF721BD0F3700D5B780 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +95,7 @@
 		575431BE21A7DAE200C557B7 = {
 			isa = PBXGroup;
 			children = (
+				575B3ECD21C56D2D006249E3 /* Localizable.strings */,
 				575431C921A7DAE200C557B7 /* ParcelTracker */,
 				575431DC21A7DAE600C557B7 /* ParcelTrackerTests */,
 				575431E721A7DAE600C557B7 /* ParcelTrackerUITests */,
@@ -96,12 +116,19 @@
 		575431C921A7DAE200C557B7 /* ParcelTracker */ = {
 			isa = PBXGroup;
 			children = (
+				575B3ED321C670DD006249E3 /* WindowController.swift */,
+				575431FE21AAAE5800C557B7 /* ParcelTableCellView.swift */,
 				575431CA21A7DAE200C557B7 /* AppDelegate.swift */,
 				575431CC21A7DAE200C557B7 /* ViewController.swift */,
+				5775DAEC21B271CE00F114FB /* ParcelStatusTableCellView.swift */,
+				575431F621A870D600C557B7 /* AddParcelViewController.swift */,
 				575431CE21A7DAE600C557B7 /* Assets.xcassets */,
 				575431D021A7DAE600C557B7 /* Main.storyboard */,
+				57C21AF621BD0F3700D5B780 /* Model.xcdatamodeld */,
 				575431D321A7DAE600C557B7 /* Info.plist */,
 				575431D421A7DAE600C557B7 /* ParcelTracker.entitlements */,
+				575431F821A891E600C557B7 /* Parcel.swift */,
+				575431FA21A957A900C557B7 /* MoyaposylkaService.swift */,
 			);
 			path = ParcelTracker;
 			sourceTree = "<group>";
@@ -192,6 +219,11 @@
 				TargetAttributes = {
 					575431C621A7DAE200C557B7 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					575431D821A7DAE600C557B7 = {
 						CreatedOnToolsVersion = 10.1;
@@ -210,6 +242,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 575431BE21A7DAE200C557B7;
 			productRefGroup = 575431C821A7DAE200C557B7 /* Products */;
@@ -229,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				575431CF21A7DAE600C557B7 /* Assets.xcassets in Resources */,
+				575B3ECF21C56D2D006249E3 /* Localizable.strings in Resources */,
 				575431D221A7DAE600C557B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5775DAED21B271CE00F114FB /* ParcelStatusTableCellView.swift in Sources */,
+				575431FF21AAAE5800C557B7 /* ParcelTableCellView.swift in Sources */,
+				575431F921A891E700C557B7 /* Parcel.swift in Sources */,
+				57C21AF821BD0F3700D5B780 /* Model.xcdatamodeld in Sources */,
+				575431FB21A957A900C557B7 /* MoyaposylkaService.swift in Sources */,
 				575431CD21A7DAE200C557B7 /* ViewController.swift in Sources */,
 				575431CB21A7DAE200C557B7 /* AppDelegate.swift in Sources */,
+				575B3ED421C670DD006249E3 /* WindowController.swift in Sources */,
+				575431F721A870D600C557B7 /* AddParcelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +336,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				575431D121A7DAE600C557B7 /* Base */,
+				575B3ECB21C569A4006249E3 /* en */,
+				575B3ECC21C56A94006249E3 /* ru */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		575B3ECD21C56D2D006249E3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575B3ECE21C56D2D006249E3 /* en */,
+				575B3ED021C56D85006249E3 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -306,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -367,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -411,6 +465,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -577,6 +632,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57C21AF621BD0F3700D5B780 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57C21AF721BD0F3700D5B780 /* Model.xcdatamodel */,
+			);
+			currentVersion = 57C21AF721BD0F3700D5B780 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 575431BF21A7DAE200C557B7 /* Project object */;
 }

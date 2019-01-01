@@ -1,0 +1,195 @@
+
+/* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
+"1UK-8n-QPP.title" = "Настроить панель инструментов…";
+
+/* Class = "NSMenuItem"; title = "ParcelTracker"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "ParcelTracker";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
+"4J7-dP-txa.title" = "Перейти в полноэкранный режим";
+
+/* Class = "NSMenuItem"; title = "Quit ParcelTracker"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Закрыть программу ParcelTracker";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Правка";
+
+/* Class = "NSMenuItem"; title = "About ParcelTracker"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "О программе ParcelTracker";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "5oI-eu-qDV"; */
+"5oI-eu-qDV.title" = "Name";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "Повторить";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Required"; ObjectID = "7i1-9k-Lc8"; */
+"7i1-9k-Lc8.placeholderString" = "Обязательно";
+
+/* Class = "NSButtonCell"; title = "Add"; ObjectID = "9CM-SG-LB5"; */
+"9CM-SG-LB5.title" = "Добавить";
+
+/* Class = "NSTextFieldCell"; title = "Date"; ObjectID = "A7m-3f-VSj"; */
+"A7m-3f-VSj.title" = "Date";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSTextFieldCell"; title = "Description"; ObjectID = "Azr-Ds-fFC"; */
+"Azr-Ds-fFC.title" = "Description";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Настройки…";
+
+/* Class = "NSMenuItem"; title = "Отправление"; ObjectID = "C1m-n7-1V9"; */
+"C1m-n7-1V9.title" = "Отправление";
+
+/* Class = "NSWindow"; title = "AddParcel"; ObjectID = "DN2-Q5-Sif"; */
+"DN2-Q5-Sif.title" = "AddParcel";
+
+/* Class = "NSTextFieldCell"; title = "Carrier"; ObjectID = "DWV-74-JCk"; */
+"DWV-74-JCk.title" = "Carrier";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Справка";
+
+/* Class = "NSMenuItem"; title = "ParcelTracker Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "ParcelTracker Help";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Fm7-IB-Sgc"; */
+"Fm7-IB-Sgc.title" = "Отмена";
+
+/* Class = "NSMenu"; title = "Отправление"; ObjectID = "GqQ-yL-J7s"; */
+"GqQ-yL-J7s.title" = "Отправление";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "Вид";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "Вид";
+
+/* Class = "NSWindow"; title = "Parcel Tracker"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Parcel Tracker";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Показать Все";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Все окна - на передний план";
+
+/* Class = "NSTextFieldCell"; title = "Location"; ObjectID = "M1k-gA-JoP"; */
+"M1k-gA-JoP.title" = "Location";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Optional"; ObjectID = "MJ5-R1-1rY"; */
+"MJ5-R1-1rY.placeholderString" = "Опционально";
+
+/* Class = "NSTextFieldCell"; title = "Нет выбранного отправления"; ObjectID = "MN5-q9-fEZ"; */
+"MN5-q9-fEZ.title" = "Нет выбранного отправления";
+
+/* Class = "NSTextFieldCell"; title = "Carrier"; ObjectID = "MVc-2W-H2I"; */
+"MVc-2W-H2I.title" = "Служба";
+
+/* Class = "NSTextFieldCell"; title = "Track Number"; ObjectID = "McZ-Me-6bT"; */
+"McZ-Me-6bT.title" = "Номер";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Службы";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "O0q-ft-0dv"; */
+"O0q-ft-0dv.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Свернуть";
+
+/* Class = "NSMenuItem"; title = "Hide ParcelTracker"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Скрыть программу ParcelTracker";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Изменить масштаб";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "Ruw-6m-B2m"; */
+"Ruw-6m-B2m.title" = "Выбрать Все";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Окно";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "V4Q-e7-eFK"; */
+"V4Q-e7-eFK.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Скрыть остальные";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "Правка";
+
+/* Class = "NSMenuItem"; title = "Добавить новое отправление..."; ObjectID = "Xcc-UJ-fNN"; */
+"Xcc-UJ-fNN.title" = "Добавить новое отправление...";
+
+/* Class = "NSTextFieldCell"; title = "TrackNumber"; ObjectID = "a7Y-kE-iqB"; */
+"a7Y-kE-iqB.title" = "TrackNumber";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Окно";
+
+/* Class = "NSTextFieldCell"; title = "Description"; ObjectID = "bcs-uQ-cw9"; */
+"bcs-uQ-cw9.title" = "Description";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "cBS-Uh-pqF"; */
+"cBS-Uh-pqF.title" = "Название";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "Отменить";
+
+/* Class = "NSMenuItem"; title = "Удалить отправление"; ObjectID = "dTe-81-5Cu"; */
+"dTe-81-5Cu.title" = "Удалить отправление";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
+"gVA-U4-sdL.title" = "Вставить";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Службы";
+
+/* Class = "NSMenuItem"; title = "Show Sidebar"; ObjectID = "kIP-vf-haE"; */
+"kIP-vf-haE.title" = "Show Sidebar";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "p5s-qn-QQB"; */
+"p5s-qn-QQB.title" = "Название";
+
+/* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
+"snW-S8-Cw5.title" = "Показать Панель инструментов";
+
+/* Class = "NSMenuItem"; title = "Изменить отправление..."; ObjectID = "sq7-Df-Ghu"; */
+"sq7-Df-Ghu.title" = "Изменить отправление...";
+
+/* Class = "NSToolbarItem"; label = "Custom View"; ObjectID = "tEp-rZ-Udk"; */
+"tEp-rZ-Udk.label" = "Custom View";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Custom View"; ObjectID = "tEp-rZ-Udk"; */
+"tEp-rZ-Udk.paletteLabel" = "Custom View";
+
+/* Class = "NSMenu"; title = "ParcelTracker"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "ParcelTracker";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
+"uRl-iY-unG.title" = "Вырезать";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
+"x3v-GG-iWU.title" = "Копировать";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "yP0-rU-cL6"; */
+"yP0-rU-cL6.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "--/--"; ObjectID = "zlj-oX-2jd"; */
+"zlj-oX-2jd.title" = "--/--";
+
+/* Class = "NSTextFieldCell"; title = "Pin-code"; ObjectID = "d8l-dQ-aBB"; */
+"d8l-dQ-aBB.title" = "Пин-код";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Required"; ObjectID = "7fb-Ht-XAI"; */
+"7fb-Ht-XAI.placeholderString" = "Обязательно";
+
+/* Class = "NSTextFieldCell"; title = "Adding"; ObjectID = "r9P-Wk-VOH"; */
+"r9P-Wk-VOH.title" = "Добавляю...";

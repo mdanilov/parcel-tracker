@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Carrier" representedClassName="CarrierMO" syncable="YES">
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Parcel" representedClassName="ParcelMO" syncable="YES">
+        <attribute name="barcode" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="carrier" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Carrier" syncable="YES"/>
+        <relationship name="status" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ParcelStatus" syncable="YES"/>
+    </entity>
+    <entity name="ParcelStatus" representedClassName="ParcelStatusMO" syncable="YES">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="delivered" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deliveringTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ParcelStatusEvent" syncable="YES"/>
+    </entity>
+    <entity name="ParcelStatusEvent" representedClassName="ParcelStatusEventMO" syncable="YES">
+        <attribute name="arrived" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="delivered" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operation" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Carrier" positionX="-3795.68359375" positionY="-1120.984375" width="128" height="75"/>
+        <element name="Parcel" positionX="-3976.00390625" positionY="-1104.05078125" width="128" height="105"/>
+        <element name="ParcelStatus" positionX="-3840.66015625" positionY="-896.01171875" width="128" height="120"/>
+        <element name="ParcelStatusEvent" positionX="-3660.44921875" positionY="-859.234375" width="128" height="120"/>
+    </elements>
+</model>

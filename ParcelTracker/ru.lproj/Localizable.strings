@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ParcelTracker
+
+  Created by Максим Данилов on 15/12/2018.
+  Copyright © 2018 Maxim Danilov. All rights reserved.
+*/
+
+"noData" = "Нет данных";
+"weight" = "вес";
+"datePlaceholderForUnknownStatus" = "Отправление не найдено";
+"descriptionPlaceholderForUnknownStatus" = "Информация о данном отправлении на текущий момент отсутствует у службы доставки. Также возможно, что введенные данные об отправлении (номер, служба) не являются верными.";
+"duplicateDetectedDialogMessage" = "Вы уже добавили этот номер для отслеживания";
+"yes" = "Да";
+"cancel" = "Отмена";
+"deleteAlertQuestion" = "Вы хотите удалить данное отправление?";

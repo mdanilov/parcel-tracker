@@ -10,17 +10,34 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+    
+    @IBOutlet weak var deleteParcelMenuItem: NSMenuItem!
+    @IBOutlet weak var changeParcelMenuItem: NSMenuItem!
+    
+    func applicationWillFinishLaunching(_ aNotification: Notification) {
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+    }
+    
+    func applicationShouldHandleReopen(_ application: NSApplication, hasVisibleWindows: Bool) -> Bool {
+        if !hasVisibleWindows {
+            for window: AnyObject in application.windows {
+                window.makeKeyAndOrderFront(self)
+            }
+        }
+        return true
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        let application = aNotification.object as! NSApplication
+        guard let viewController = application.mainWindow!.contentViewController as? ViewController else {
+            return
+        }
+        viewController.saveParcels()
     }
-
-
+    
+    @IBOutlet weak var addParcelMenuItem: NSMenuItem!
+    
 }
 
