@@ -228,7 +228,7 @@ class ViewController: NSViewController {
     
     @objc func onNotification(notification: Notification) {
         if let parcel = notification.userInfo?["parcel"] as? ParcelTracker.Parcel {
-            parcels.append(parcel)
+            parcels.insert(parcel, at: 0)
             self.saveParcels()
             self.statusTableView.reloadData()
             self.leftTableView.reloadData()
