@@ -60,9 +60,9 @@
 		575431FE21AAAE5800C557B7 /* ParcelTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTableCellView.swift; sourceTree = "<group>"; };
 		575B3ECB21C569A4006249E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		575B3ECC21C56A94006249E3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		575B3ECE21C56D2D006249E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ParcelTracker/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		575B3ED021C56D85006249E3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ParcelTracker/ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		575B3ED321C670DD006249E3 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		57685B3B21DB8CDD00E9A17D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ParcelTracker/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5775DAEC21B271CE00F114FB /* ParcelStatusTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelStatusTableCellView.swift; sourceTree = "<group>"; };
 		57C21AF721BD0F3700D5B780 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,8 +345,8 @@
 		575B3ECD21C56D2D006249E3 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				575B3ECE21C56D2D006249E3 /* en */,
 				575B3ED021C56D85006249E3 /* ru */,
+				57685B3B21DB8CDD00E9A17D /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

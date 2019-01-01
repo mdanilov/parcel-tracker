@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ParcelTracker
+
+  Created by Максим Данилов on 15/12/2018.
+  Copyright © 2018 Maxim Danilov. All rights reserved.
+*/
+
+"noData" = "No data available";
+"weight" = "weight";
+"datePlaceholderForUnknownStatus" = "Shipment not found";
+"descriptionPlaceholderForUnknownStatus" = "Information about this shipment is currently missing from the delivery service. It is also possible that the entered shipment data (number, service) is not correct.";
+"duplicateDetectedDialogMessage" = "You have already added this tracking number";
+"yes" = "Yes";
+"cancel" = "Cancel";
+"deleteAlertQuestion" = "Do you want to delete this shipment?";
