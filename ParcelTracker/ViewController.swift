@@ -230,8 +230,8 @@ class ViewController: NSViewController {
         if let parcel = notification.userInfo?["parcel"] as? ParcelTracker.Parcel {
             parcels.insert(parcel, at: 0)
             self.saveParcels()
-            self.statusTableView.reloadData()
             self.leftTableView.reloadData()
+            self.leftTableView.selectRowIndexes([0], byExtendingSelection: false)
         }
     }
     

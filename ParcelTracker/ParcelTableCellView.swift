@@ -37,7 +37,7 @@ class ParcelTableCellView: NSTableCellView {
                     templateImage = NSImage(named: "OkImage")
                 }
                 else if let deliveringTime = status.deliveringTime {
-                    deliveringTimeTextField.stringValue = String(deliveringTime)
+                    deliveringTimeTextField.stringValue = String(deliveringTime <= 99 ? deliveringTime : 99)
                     deliveringTimeTextField.isHidden = false
                     statusImage.isHidden = true
                 }
