@@ -640,9 +640,10 @@ Gw
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="qnC-Ew-wnd" id="1mz-Rx-pI7"/>
+                        <outlet property="addButton" destination="qnC-Ew-wnd" id="9hB-FS-gdk"/>
                         <outlet property="addingBox" destination="8yN-tM-Jkg" id="Rvi-mn-iQc"/>
                         <outlet property="addingProgressIndicator" destination="oP1-Lz-xdI" id="Jl2-f4-9nV"/>
+                        <outlet property="addingTextField" destination="QjF-tB-hKz" id="LtV-9z-e3A"/>
                         <outlet property="carrierComboBox" destination="Fg5-OZ-F1C" id="9Mu-co-0Sx"/>
                         <outlet property="carrierLabel" destination="feA-1j-gh2" id="bj4-SY-Ax2"/>
                         <outlet property="nameTextField" destination="DiH-mB-HfI" id="UEF-mf-IwU"/>
@@ -753,11 +754,7 @@ Gw
                                                                             </constraints>
                                                                             <connections>
                                                                                 <outlet property="deliveringTimeTextField" destination="BTU-xD-W7R" id="oG1-NJ-qc8"/>
-                                                                                <outlet property="description" destination="6X6-in-6ye" id="Mn6-fB-TsA"/>
-                                                                                <outlet property="image" destination="AhN-Mm-DRI" id="3PB-lz-Yeq"/>
-                                                                                <outlet property="lastState" destination="6X6-in-6ye" id="ubI-W0-XtE"/>
                                                                                 <outlet property="lastStatusTextField" destination="6X6-in-6ye" id="G5B-R1-zdk"/>
-                                                                                <outlet property="name" destination="n5C-Pn-Gac" id="Vtn-0v-mNh"/>
                                                                                 <outlet property="nameTextField" destination="n5C-Pn-Gac" id="Wvk-1f-WrB"/>
                                                                                 <outlet property="statusImage" destination="AhN-Mm-DRI" id="MO8-AP-fwI"/>
                                                                             </connections>
@@ -1097,6 +1094,6 @@ Gw
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xjl-14-uLA"/>
+        <segue reference="TZC-IY-WzV"/>
     </inferredMetricsTieBreakers>
 </document>

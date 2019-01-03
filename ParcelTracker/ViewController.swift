@@ -240,10 +240,10 @@ class ViewController: NSViewController {
     }
     
     @IBAction func changeButtonClicked(_ sender: Any) {
-        return
+        //return
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         if let wc = storyboard.instantiateController(withIdentifier: "AddParcelWindowID") as? NSWindowController, let vc = wc.contentViewController as? AddParcelViewController {
-            vc.parcel = selectedParcel
+            vc.initFromParcel(selectedParcel!, index: parcels.firstIndex(of: selectedParcel!)!)
             wc.showWindow(nil)
         }
     }

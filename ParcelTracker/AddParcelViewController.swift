@@ -20,6 +20,13 @@ class AddParcelViewController: NSViewController, NSTextFieldDelegate  {
     @IBOutlet weak var pinCodeTextField: NSTextField!
     @IBOutlet weak var addingBox: NSBox!
     @IBOutlet weak var addingProgressIndicator: NSProgressIndicator!
+    @IBOutlet weak var addingTextField: NSTextField!
+    
+    let duplicateDetectedDialogMessage = NSLocalizedString("duplicateDetectedDialogMessage", comment: "Shown on alert when user tried to add already existing parcel")
+    let addingProgressLocalStr = NSLocalizedString("addingProgress", comment: "Shown near the progress indicator in the adding mode")
+    let changingProgressLocalStr = NSLocalizedString("changingProgress", comment: "Shown near the progress indicator in the changing mode")
+    let addButtonLocalStr = NSLocalizedString("addButton", comment: "Add button text")
+    let changeButtonLocalStr = NSLocalizedString("changeButton", comment: "Change button text")
     
     var query: MoyaposylkaService.Query?
     var carriers: [Carrier] = [] {
@@ -59,17 +66,23 @@ class AddParcelViewController: NSViewController, NSTextFieldDelegate  {
             }
         }
     }
+    
+    enum WindowMode {
+        case adding, changing
+    }
 
     let vc = NSApplication.shared.mainWindow?.contentViewController as! ViewController
-    var parcel: Parcel?
-    
-    let duplicateDetectedDialogMessage = NSLocalizedString("duplicateDetectedDialogMessage", comment: "Shown on alert when user tried to add already existing parcel")
+    var windowMode: WindowMode = .adding
+    var index: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.trackNumberTextField.delegate = self as NSTextFieldDelegate
         self.carrierComboBox.dataSource = self as NSComboBoxDataSource
+        
+        self.addingTextField.stringValue = addingProgressLocalStr
+        self.addButton.title = addButtonLocalStr
     }
     
     override func viewWillAppear() {
@@ -77,21 +90,26 @@ class AddParcelViewController: NSViewController, NSTextFieldDelegate  {
         self.addingBox.isHidden = true
         self.addButton.isEnabled = true
         self.addingProgressIndicator.stopAnimation(nil)
-        
-        if (parcel != nil) {
-            self.nameTextField.stringValue = parcel!.name
-            self.trackNumberTextField.stringValue = parcel!.barcode
-            if let pinCode = parcel!.pinCode {
-                self.pinCodeTextField.stringValue = pinCode
-            }
-            sharedMoyaposylkaService.requestCarrier(parcel!.barcode) { carriers in
-                self.carriers = carriers
-                if let carrier = carriers.enumerated().first(where: {$0.element.code == self.parcel!.carrier.code}) {
-                    self.carrierComboBox.selectItem(at: carrier.offset)
-                    self.selectedCarrier = carrier.element
-                }
+    }
+    
+    func initFromParcel(_ parcel: Parcel, index: Int) {
+        self.nameTextField.stringValue = parcel.name
+        self.trackNumberTextField.stringValue = parcel.barcode
+        if let pinCode = parcel.pinCode {
+            self.pinCodeTextField.stringValue = pinCode
+        }
+        sharedMoyaposylkaService.requestCarrier(parcel.barcode) { carriers in
+            self.carriers = carriers
+            if let carrier = carriers.enumerated().first(where: {$0.element.code == parcel.carrier.code}) {
+                self.carrierComboBox.selectItem(at: carrier.offset)
+                self.selectedCarrier = carrier.element
             }
         }
+        
+        self.addingTextField.stringValue = changingProgressLocalStr
+        self.addButton.title = changeButtonLocalStr
+        windowMode = .changing
+        self.index = index
     }
 
     func controlTextDidChange(_ notification: Notification) {
@@ -120,6 +138,15 @@ class AddParcelViewController: NSViewController, NSTextFieldDelegate  {
         self.view.window!.close()
     }
     
+    func isDuplicate(_ parcel: Parcel) -> Bool {
+        if (windowMode == .adding) {
+            return vc.parcels.contains(parcel)
+        }
+        else {
+            return (vc.parcels[index!] != parcel) && vc.parcels.contains(parcel)
+        }
+    }
+    
     @IBAction func addButtonClicked(_ sender: Any) {
         if (self.carriers.count > 1 && self.carrierComboBox.indexOfSelectedItem == -1) {
             self.carrierComboBox.selectItem(at: 0)
@@ -143,7 +170,7 @@ class AddParcelViewController: NSViewController, NSTextFieldDelegate  {
             parcelToAdd.pinCode = pinCodeTextField.stringValue
         }
         
-        if (vc.parcels.contains(parcelToAdd)) {
+        if (isDuplicate(parcelToAdd)) {
             let name = vc.parcels[vc.parcels.firstIndex(of: parcelToAdd)!].name
             dialogOK(message: duplicateDetectedDialogMessage, info: name)
         }
@@ -154,7 +181,14 @@ class AddParcelViewController: NSViewController, NSTextFieldDelegate  {
             self.query = sharedMoyaposylkaService.requestParcelStatus(parcelToAdd.carrier.code, parcelToAdd.barcode, parcelToAdd.pinCode) { parcelStatus in
                 DispatchQueue.main.async {
                     parcelToAdd.status = parcelStatus
-                    NotificationCenter.default.post(name: ViewController.newParcelAddedNotification, object: nil, userInfo: ["parcel": parcelToAdd])
+                    if (self.windowMode == .changing) {
+                        self.vc.parcels[self.index!] = parcelToAdd
+                        self.vc.leftTableView.reloadData(forRowIndexes: [self.index!], columnIndexes: [0])
+                        self.vc.statusTableView.reloadData()
+                        self.vc.selectedParcel = parcelToAdd
+                    } else {
+                        NotificationCenter.default.post(name: ViewController.newParcelAddedNotification, object: nil, userInfo: ["parcel": parcelToAdd])
+                    }
                     
                     if let window = self.view.window {
                         window.close()

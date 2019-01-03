@@ -14,3 +14,7 @@
 "yes" = "Да";
 "cancel" = "Отмена";
 "deleteAlertQuestion" = "Вы хотите удалить данное отправление?";
+"addingProgress" = "Добавляю...";
+"changingProgress" = "Изменяю...";
+"addButton" = "Добавить";
+"changeButton" = "Изменить";
