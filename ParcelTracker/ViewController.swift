@@ -166,7 +166,9 @@ class ViewController: NSViewController {
                         }
                     }
                     
-                    if (curParcel.status != parcelStatus) {
+                    let status = parcelStatus ?? ParcelStatus()
+                    
+                    if (status.events.count > 0 && (curParcel.status != parcelStatus)) {
                         let content = UNMutableNotificationContent()
                         content.title = NSString.localizedUserNotificationString(forKey: "Parcel %@", arguments: [parcel.name])
                         content.subtitle = parcelStatus!.events[0].operation
@@ -176,7 +178,6 @@ class ViewController: NSViewController {
                         UNUserNotificationCenter.current().add(notification)
                     }
                     
-                    let status = parcelStatus ?? ParcelStatus()
                     curParcel.status = status
                     if (curParcel === self.selectedParcel) {
                         self.statusTableView.reloadData()
