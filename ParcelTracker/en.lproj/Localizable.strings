@@ -18,3 +18,4 @@
 "changingProgress" = "Changing...";
 "addButton" = "Add";
 "changeButton" = "Change";
+"Parcel %@" = "Parcel %1$@";

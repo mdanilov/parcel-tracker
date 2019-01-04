@@ -677,7 +677,7 @@ Gw
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="60" usesAutomaticRowHeights="YES" viewBased="YES" id="Sjh-yp-Eyv">
+                                                        <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="60" usesAutomaticRowHeights="YES" viewBased="YES" id="Sjh-yp-Eyv" customClass="ParcelTableView" customModule="ParcelTracker" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -696,7 +696,7 @@ Gw
                                                                     </textFieldCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                                                     <prototypeCellViews>
-                                                                        <tableCellView identifier="ParcelTableCellID" id="Nui-QQ-D8c" customClass="ParcelTableCellView" customModule="ParcelTracker" customModuleProvider="target">
+                                                                        <tableCellView identifier="ParcelTableCellID" focusRingType="none" id="Nui-QQ-D8c" customClass="ParcelTableCellView" customModule="ParcelTracker" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>

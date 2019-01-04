@@ -18,7 +18,7 @@ class Carrier: Codable {
     }
 }
 
-class Event: Codable {
+class Event: Codable, Equatable {
     let date: Date
     let operation: String
     let location: String?
@@ -43,15 +43,23 @@ class Event: Codable {
         self.arrived = arrived
         self.accepted = accepted
     }
+    
+    static func ==(lhs: Event, rhs: Event) -> Bool {
+        return lhs.date == rhs.date
+    }
 }
 
-class ParcelStatus: Codable {
+class ParcelStatus: Codable, Equatable {
     var delivered: Bool?
     var events: [Event] = []
     var createdAt: Date = Date()
     var updatedAt: Date = Date()
     var deliveringTime: Int?
     var weight: Float?
+    
+    static func ==(lhs: ParcelStatus, rhs: ParcelStatus) -> Bool {
+        return lhs.events == rhs.events
+    }
 }
 
 class Parcel: Codable, Equatable {

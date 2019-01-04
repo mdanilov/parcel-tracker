@@ -17,6 +17,7 @@
 		575431F921A891E700C557B7 /* Parcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431F821A891E600C557B7 /* Parcel.swift */; };
 		575431FB21A957A900C557B7 /* MoyaposylkaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431FA21A957A900C557B7 /* MoyaposylkaService.swift */; };
 		575431FF21AAAE5800C557B7 /* ParcelTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575431FE21AAAE5800C557B7 /* ParcelTableCellView.swift */; };
+		5759080221DE33A4001D6148 /* ParcelTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5759080121DE33A4001D6148 /* ParcelTableView.swift */; };
 		575B3ECF21C56D2D006249E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 575B3ECD21C56D2D006249E3 /* Localizable.strings */; };
 		575B3ED421C670DD006249E3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B3ED321C670DD006249E3 /* WindowController.swift */; };
 		5775DAED21B271CE00F114FB /* ParcelStatusTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775DAEC21B271CE00F114FB /* ParcelStatusTableCellView.swift */; };
@@ -58,6 +59,7 @@
 		575431F821A891E600C557B7 /* Parcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parcel.swift; sourceTree = "<group>"; };
 		575431FA21A957A900C557B7 /* MoyaposylkaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaposylkaService.swift; sourceTree = "<group>"; };
 		575431FE21AAAE5800C557B7 /* ParcelTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTableCellView.swift; sourceTree = "<group>"; };
+		5759080121DE33A4001D6148 /* ParcelTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTableView.swift; sourceTree = "<group>"; };
 		575B3ECB21C569A4006249E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		575B3ECC21C56A94006249E3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		575B3ED021C56D85006249E3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ParcelTracker/ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				575431F621A870D600C557B7 /* AddParcelViewController.swift */,
 				575431CE21A7DAE600C557B7 /* Assets.xcassets */,
 				575431D021A7DAE600C557B7 /* Main.storyboard */,
+				5759080121DE33A4001D6148 /* ParcelTableView.swift */,
 				57C21AF621BD0F3700D5B780 /* Model.xcdatamodeld */,
 				575431D321A7DAE600C557B7 /* Info.plist */,
 				575431D421A7DAE600C557B7 /* ParcelTracker.entitlements */,
@@ -296,6 +299,7 @@
 				575431CD21A7DAE200C557B7 /* ViewController.swift in Sources */,
 				575431CB21A7DAE200C557B7 /* AppDelegate.swift in Sources */,
 				575B3ED421C670DD006249E3 /* WindowController.swift in Sources */,
+				5759080221DE33A4001D6148 /* ParcelTableView.swift in Sources */,
 				575431F721A870D600C557B7 /* AddParcelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

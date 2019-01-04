@@ -18,3 +18,5 @@
 "changingProgress" = "Изменяю...";
 "addButton" = "Добавить";
 "changeButton" = "Изменить";
+"Parcel %@" = "Посылка %1$@";
+

@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import UserNotifications
 
 class ViewController: NSViewController {
     
@@ -165,6 +166,16 @@ class ViewController: NSViewController {
                         }
                     }
                     
+                    if (curParcel.status != parcelStatus) {
+                        let content = UNMutableNotificationContent()
+                        content.title = NSString.localizedUserNotificationString(forKey: "Parcel %@", arguments: [parcel.name])
+                        content.subtitle = parcelStatus!.events[0].operation
+                        content.sound = UNNotificationSound.default
+                        
+                        let notification = UNNotificationRequest(identifier: parcel.barcode, content: content, trigger: nil)
+                        UNUserNotificationCenter.current().add(notification)
+                    }
+                    
                     let status = parcelStatus ?? ParcelStatus()
                     curParcel.status = status
                     if (curParcel === self.selectedParcel) {
@@ -211,7 +222,7 @@ class ViewController: NSViewController {
         
         activity.repeats = true
         activity.interval = 30 * 60
-        activity.qualityOfService = QualityOfService.background
+        activity.qualityOfService = QualityOfService.utility
         activity.tolerance = 15 * 60
         activity.schedule() { (completion: NSBackgroundActivityScheduler.CompletionHandler) in
             self.updateAllStatus(invokedByUser: false)
