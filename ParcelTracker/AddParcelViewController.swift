@@ -185,7 +185,10 @@ class AddParcelViewController: NSViewController, NSTextFieldDelegate  {
                         self.vc.parcels[self.index!] = parcelToAdd
                         self.vc.leftTableView.reloadData(forRowIndexes: [self.index!], columnIndexes: [0])
                         self.vc.statusTableView.reloadData()
-                        self.vc.selectedParcel = parcelToAdd
+                        
+                        if (self.vc.leftTableView.selectedRow == self.index!) {
+                            self.vc.selectedParcel = parcelToAdd
+                        }
                     } else {
                         NotificationCenter.default.post(name: ViewController.newParcelAddedNotification, object: nil, userInfo: ["parcel": parcelToAdd])
                     }

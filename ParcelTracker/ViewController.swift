@@ -66,7 +66,7 @@ class ViewController: NSViewController {
     let app = NSApplication.shared.delegate as! AppDelegate
     var lastSelectedRow: Int = -1
     
-    func deleteSelectedParcelWithUserQuestion() {
+    func deleteParcelWithUserQuestion(index: Int) {
         func dialogOKCancel(question: String, _ text: String? = "") -> Bool {
             let alert = NSAlert()
             alert.messageText = question
@@ -80,28 +80,28 @@ class ViewController: NSViewController {
         let answer = dialogOKCancel(question: deleteAlertQuestionLocalStr)
         
         if (answer) {
-            deleteSelectedParcel()
+            deleteParcel(row: index)
+            saveParcels()
         }
     }
     
-    func deleteSelectedParcel() {
-        if (leftTableView.selectedRow != -1) {
-            var selectedRow = self.leftTableView.selectedRow
-            self.parcels.remove(at: selectedRow)
-            self.leftTableView.reloadData()
-            
-            if (selectedRow >= self.parcels.count) {
-                selectedRow = self.parcels.count - 1
-            }
-            
-            if (selectedRow > -1) {
-                self.leftTableView.deselectAll(nil)
-                self.leftTableView.selectRowIndexes([selectedRow], byExtendingSelection: false)
-                self.selectedParcel = parcels[selectedRow]
-            }
-            else {
-                self.selectedParcel = nil
-            }
+    func deleteParcel(row: Int) {
+        var selectedRow = self.leftTableView.selectedRow
+        
+        if (selectedRow >= row) {
+            selectedRow -= 1
+        }
+        
+        self.parcels.remove(at: row)
+        self.leftTableView.reloadData()
+        
+        if (selectedRow > -1) {
+            self.leftTableView.deselectAll(nil)
+            self.leftTableView.selectRowIndexes([selectedRow], byExtendingSelection: false)
+            self.selectedParcel = parcels[selectedRow]
+        }
+        else {
+            self.selectedParcel = nil
         }
     }
     
@@ -248,16 +248,40 @@ class ViewController: NSViewController {
     }
     
     @IBAction func deleteButtonClicked(_ sender: Any) {
-        deleteSelectedParcelWithUserQuestion()
+        if (leftTableView.selectedRow != -1) {
+            let selectedRow = self.leftTableView.selectedRow
+            deleteParcelWithUserQuestion(index: selectedRow)
+        }
+    }
+    
+    @IBAction func deleteButtonFromMenuClicked(_ sender: Any) {
+        guard let table = self.leftTableView as? ParcelTableView else {
+            return
+        }
+        
+        deleteParcelWithUserQuestion(index: table.clickedItem)
+    }
+    
+    func showChangeWindow(row: Int) {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        if let wc = storyboard.instantiateController(withIdentifier: "AddParcelWindowID") as? NSWindowController, let vc = wc.contentViewController as? AddParcelViewController {
+            vc.initFromParcel(parcels[row], index: row)
+            wc.showWindow(nil)
+        }
     }
     
     @IBAction func changeButtonClicked(_ sender: Any) {
-        //return
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        if let wc = storyboard.instantiateController(withIdentifier: "AddParcelWindowID") as? NSWindowController, let vc = wc.contentViewController as? AddParcelViewController {
-            vc.initFromParcel(selectedParcel!, index: parcels.firstIndex(of: selectedParcel!)!)
-            wc.showWindow(nil)
+        if let selectedRow = parcels.firstIndex(of: selectedParcel!) {
+            showChangeWindow(row: selectedRow);
         }
+    }
+    
+    @IBAction func changeButtonFromMenuClicked(_ sender: Any) {
+        guard let table = self.leftTableView as? ParcelTableView else {
+            return
+        }
+        
+        showChangeWindow(row: table.clickedItem);
     }
 }
 

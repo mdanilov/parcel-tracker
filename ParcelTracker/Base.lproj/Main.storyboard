@@ -762,6 +762,9 @@ Gw
                                                                     </prototypeCellViews>
                                                                 </tableColumn>
                                                             </tableColumns>
+                                                            <connections>
+                                                                <outlet property="menu" destination="PRJ-5F-Ex2" id="3za-MU-dKM"/>
+                                                            </connections>
                                                         </tableView>
                                                     </subviews>
                                                 </clipView>
@@ -1081,6 +1084,22 @@ Gw
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="PRJ-5F-Ex2">
+                    <items>
+                        <menuItem title="Delete shipment" id="vRB-xw-IVY">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="deleteButtonFromMenuClicked:" target="rPt-NT-nkU" id="HGk-zZ-Z2i"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Change shipment..." id="z0X-J1-GZZ">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="changeButtonFromMenuClicked:" target="rPt-NT-nkU" id="WZS-Gn-dMf"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
             <point key="canvasLocation" x="-81" y="863"/>
         </scene>

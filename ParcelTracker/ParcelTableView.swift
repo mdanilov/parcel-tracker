@@ -16,4 +16,17 @@ class ParcelTableView: NSTableView {
         // Drawing code here.
     }
     
+    var clickedItem: Int = -1
+    
+    override func menu(for event: NSEvent) -> NSMenu? {
+        clickedItem = self.row(at: self.convert(event.locationInWindow, from: nil))
+        
+        // If the click occurred outside of any of the playlist rows (i.e. empty space), don't show the menu
+        if (clickedItem == -1) {
+            return nil
+        }
+        
+        return self.menu
+    }
+    
 }

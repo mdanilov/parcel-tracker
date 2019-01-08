@@ -193,3 +193,9 @@
 
 /* Class = "NSTextFieldCell"; title = "Adding"; ObjectID = "r9P-Wk-VOH"; */
 "r9P-Wk-VOH.title" = "Добавляю...";
+
+/* Class = "NSMenuItem"; title = "Delete shipment"; ObjectID = "vRB-xw-IVY"; */
+"vRB-xw-IVY.title" = "Удалить отправление";
+
+/* Class = "NSMenuItem"; title = "Change shipment..."; ObjectID = "z0X-J1-GZZ"; */
+"z0X-J1-GZZ.title" = "Изменить отправление...";
