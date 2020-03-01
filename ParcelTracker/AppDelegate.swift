@@ -13,6 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBOutlet weak var deleteParcelMenuItem: NSMenuItem!
     @IBOutlet weak var changeParcelMenuItem: NSMenuItem!
+    @IBOutlet weak var findOnMapMenuItem: NSMenuItem!
     
     func applicationWillFinishLaunching(_ aNotification: Notification) {
     }

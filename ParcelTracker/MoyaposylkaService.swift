@@ -76,12 +76,17 @@ class MoyaposylkaService {
                     }
                     print("Info: Got updated parcel status \(result)")
                     completion(result)
-                } else if (response.statusCode == 404 && numberOfAttemps > 0) {
-                    print("Warning: Parcel status is not ready yet, try to request again")
-                    DispatchQueue.main.async {
-                        if (query.running) {
-                            query.timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { _ in
-                                self.doGetRequest(query, carrier, barcode, numberOfAttemps - 1, completion)
+                } else if (response.statusCode == 404) {
+                    let data: AnyObject = try! JSONSerialization.jsonObject(with: data, options:.mutableContainers) as AnyObject
+                    if (data["message"] as! String == "RealtimeRequestNotFound") {
+                        completion(nil)
+                    } else if (data["message"] as! String == "RealtimeRequestNotReady" && numberOfAttemps > 0) {
+                        print("Warning: Parcel status is not ready yet, try to request again")
+                        DispatchQueue.main.async {
+                            if (query.running) {
+                                query.timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { _ in
+                                    self.doGetRequest(query, carrier, barcode, numberOfAttemps - 1, completion)
+                                }
                             }
                         }
                     }

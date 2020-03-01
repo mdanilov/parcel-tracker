@@ -44,6 +44,7 @@ class ViewController: NSViewController {
                 
                 self.app.changeParcelMenuItem.isEnabled = true
                 self.app.deleteParcelMenuItem.isEnabled = true
+                self.app.findOnMapMenuItem.isEnabled = true
                 
                 if let wc = self.view.window?.windowController as? WindowController {
                     wc.deleteButton.isEnabled = true
@@ -55,6 +56,7 @@ class ViewController: NSViewController {
                 
                 self.app.changeParcelMenuItem.isEnabled = false
                 self.app.deleteParcelMenuItem.isEnabled = false
+                self.app.findOnMapMenuItem.isEnabled = false
                 
                 if let wc = self.view.window?.windowController as? WindowController {
                     wc.deleteButton.isEnabled = false
@@ -251,6 +253,14 @@ class ViewController: NSViewController {
         if (leftTableView.selectedRow != -1) {
             let selectedRow = self.leftTableView.selectedRow
             deleteParcelWithUserQuestion(index: selectedRow)
+        }
+    }
+    
+    @IBAction func findOnMapMainMenuItemClicked(_ sender: Any) {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        if let wc = storyboard.instantiateController(withIdentifier: "MapWindowID") as? NSWindowController, let vc = wc.contentViewController as? MapViewController {
+            vc.initFromParcel(selectedParcel!);
+            wc.showWindow(nil)
         }
     }
     
